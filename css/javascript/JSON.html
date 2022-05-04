@@ -1,0 +1,40 @@
+<!-- javascript mein agr koi data ko transport krna h network mein through string format so we used 'JSON' -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <div class="container">
+        This is my container
+    </div>
+    <script>
+        //Take an Object
+        let JsonObj = {
+            Name: "Ushba",
+            Age: 23,
+            Religion: "Islam",
+        }
+        console.log(JsonObj);
+
+        //Converting into String
+        let JsonStr = JSON.stringify(JsonObj);
+        console.log(JsonStr);
+
+        //Replacing String
+
+        JsonStr = JsonStr.replace('Ushba','JavaScript');
+        console.log(JsonStr);
+
+        //Converting into Object
+
+        JsonObj = JSON.parse(JsonStr);
+        console.log(JsonObj);
+
+    </script>
+    
+</body>
+</html>
